@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+    <style>
+        body{
+            text-align: center;
+            text-shadow: 1px 1px 1px white;
+        }
+        .container{
+            background-color: darkgreen;
+            color: yellow;
+            width: 500px;
+            margin: auto;
+        }
+        .tabela{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img{
+            height: 400px;
+            width: 300px;
+        }
+        ul{
+            list-style-type:none;
+        }
+    </style>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <h1>Exercicio 2 - Formulário + imagem</h1>
+    <div class="container">
+        <form>
+            <table class="tabela">
+                <tr>
+                    <td><label for="corFundo">Cor de fundo: </label></td>
+                    <td><input type="text" id="corFundo" name="corFundo" onchange="mudaCor()"></td>
+                </tr>
+                <tr>
+                    <td><label for="imagemAbaixo">Imagem: </label></td>
+                    <td><input type="text" id="imagemAbaixo" name="imagemAbaixo" onchange="mudaImagem()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" onclick="limpar()" value="Limpar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <h2>Imagem abaixo!</h2>
+    <img src="imagens/bigbangtheory1.jpg" id="imagemAlterada">
+    <ul>
+        <li><h3>Lista de imagens possíveis!</h3></li>
+        <li><p>"imagens/bigbangtheory1.jpg"</p></li>
+        <li><p>"imagens/bigbangtheory2.jpg"</p></li>
+        <li><p>"imagens/bigbangtheory3.jpg"</p></li>
+        <li><p>Qualquer link de imagem desejada que termine com .jpg, .png, etc.</p></li>
+    </ul>
+</body>
+</html>

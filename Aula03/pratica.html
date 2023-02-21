@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Exercício 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            Nome
+            <input type="text" id="nome"><br>
+            Sobrenome
+            <input type="text" id="sobrenome"><br>
+            Idade
+            <input type="number" id="idade"><br>
+            <input type="button" value="Enviar" onclick="enviaFormulario()">
+        </form>
+        <script>
+          function enviaFormulario(){
+              var nome;
+              var usuario;
+              nome = document.getElementById("nome");
+              usuario = {nomeUsuario:nome,
+                sobrenome:document.getElementById("sobrenome").value,
+                idade:document.getElementById("idade").value}
+              alert("Usuário\nNome: "+usuario.nomeUsuario.value+
+              "\nQuantidade letras do nome: "+usuario.nomeUsuario.value.length+
+              "\nSobrenome: "+usuario.sobrenome+
+              "\nIdade: "+usuario.idade);
+          }
+        </script>
+    </body>
+</html>

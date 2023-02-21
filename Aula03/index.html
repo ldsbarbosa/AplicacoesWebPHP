@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Exercício 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <img src="img/sheldon_triste.png" id="imagem" onclick="alteraImagem()">
+        <script>
+            function alteraImagem(){
+                var imagem = document.getElementById("imagem");
+                if(imagem.src.match("img/sheldon_triste.png"))
+                    imagem.src = "img/sheldon_feliz.png";
+                else {
+                    imagem.src = "img/sheldon_triste.png";
+                }
+            }
+        </script>
+    </body>
+</html>
